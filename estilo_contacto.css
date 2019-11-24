@@ -1,0 +1,739 @@
+body {
+	background-image:url(imagenes/fondo_madera1.jpg);
+	font-family: serif;
+}
+
+header {
+	width: 960px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#marca {
+	width: 640px;
+	height: 120px;
+	float: left;
+ }
+
+.marca {
+	width: 960px;
+	height: 120px;
+	border-radius: 10px;
+}
+#botonera {
+	width: 150px;
+	height: 120px;
+	float: left; /*muevo la botonera hacia la derecha*/
+	  }
+
+#botonera2 {
+	width: 150px;
+	height: 120px;
+	float: left; /*muevo la botonera hacia la derecha*/
+	margin-left: 10px;
+	  }
+
+.botones{
+	display: block;
+	width: 149px;
+	height: 55px;
+	color: white;
+	text-decoration: none;
+	text-align: center; /*alinear texto horizontalmente*/
+	line-height: 59px;  /*alinear texto verticalmente*/
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-bottom: 3px;
+
+}
+
+.botones:hover {
+	background-color: rgba(255, 144, 0, 0.6);
+	box-shadow: 0 0 20px #FFFFFF;
+	padding: 0px 8px 0px 0px;
+}
+
+nav {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+nav li {
+	display: inline;
+}
+
+section {
+	width: 960px;
+	height: 1200px;
+	background-color: rgba(127, 64, 18, 1);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+@-webkit-keyframes 'movimiento-diagonal' {
+   from {
+      color: black;
+   }
+   
+   to {
+      color: #61210B;
+   }
+} 
+#anim {
+   -webkit-animation-name: movimiento-diagonal;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;/*para que vuelva a su posicion inicial */
+   
+   color: teal;
+   position: relative; 
+   padding: 0px;
+}
+
+#contenido_contacto {
+	width: 530px;
+	height: 80px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.estilo_contacto {
+	height: 80px;
+	text-align: center;
+	line-height: 110px;
+	font-size: 30px;
+	font-family: fontspring;
+}
+
+h2 {
+	margin: 0;
+}
+
+label {
+	font-family: serif;
+	font-weight: bold;
+}
+
+label, input, textarea, select,option,button {
+	display: block;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
+}
+button {
+	margin: 5px;
+}
+
+input, textarea, select {
+	border: 1px solid #000000;
+	padding: 0px;
+}
+
+
+
+@font-face{
+	font-family: 'fontspring';
+	src:url('fuente/fontspring.otf') format('truetype');
+}
+
+#formulario {
+	width: 960px;
+	height: 400px;
+	background-color: #BF601B;
+}
+
+#reserva {
+	width: 90%;
+	height:35px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.reserva{
+	text-align: center;
+	font-family: fontspring;
+}
+
+.boton_label {
+	font-size:18px;
+	margin-bottom: 2px;
+	font-family: fontspring;
+}
+
+.boton_select {
+	height:24px;
+	font-size:16px;
+	font-family: Verdana;
+	background-color: white;
+	margin-bottom: 10px;
+	box-shadow: 2px 2px 5px #000000;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+.boton_input {
+	height: 24px;
+	margin-bottom: 15px;
+	box-shadow: 2px 2px 5px #000000;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+.boton_text {
+	margin-bottom: 15px;
+	box-shadow: 2px 2px 5px #000000;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+.boton_eliminar {
+	width:90%;
+	height: 30px;
+	margin-top: 20px;
+	box-shadow: 2px 2px 5px #000000;
+	font-family: Verdana;
+	font-weight: bold;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+.boton_formulario {
+	width: 80%;
+	height: 50px;
+	background-color: #A4A4A4;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 25px;
+	box-shadow: 3px 3px 10px #000000;
+	font-family: fontspring;
+	font-size: 18px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.boton_formulario2 {
+	width: 80%;
+	height: 40px;
+	background-color: #A4A4A4;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+	box-shadow: 3px 3px 10px #000000;
+	font-family: fontspring;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.boton_formulario:hover {
+	background-color: #D8D8D8;
+	border-color: white;
+	box-shadow: 0px 0px 10px #FFFFFF;
+}
+
+.boton_formulario2:hover {
+	background-color: #D8D8D8;
+	border-color: white;
+	box-shadow: 0px 0px 10px #FFFFFF;
+}
+
+
+#formulario2 {
+	width: 960px;
+	height: 500px;
+	background-color: #BF601B;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: auto;
+	border-radius: 0px;
+}
+
+#animado {
+	width:49%;
+	height:95px;
+}
+#animado2 {
+	width:49%;
+	height:95px;
+}
+
+
+
+footer {
+	width: 960px;
+	height: 150px;
+	background-color: #BF601B;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	border-radius: 10px;
+}
+
+#fondo_texto_redes {
+	width: 300px;
+	height: 150px;
+	float: left;
+}
+
+.texto_redes {
+	width: 300px;
+	height: 150px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: fontspring;
+}
+
+#contactos {
+	width: 480px;
+	height: 100px;
+	background-color: #F2F2F2;
+	float: left;
+	margin-top: 25px;
+}
+.contacto1 {
+	width: 100px;
+	height: 95px;
+	background-color: white;
+	float:left;
+	margin: 1px;
+}
+
+.contacto2 {
+	width: 260px;
+	height: 95px;
+	background-color: white;
+	float:left;
+	margin-left: 1px;
+}
+
+.contacto3 {
+	width: 110px;
+	height: 95px;
+	background-color: white;
+	float:left;
+	margin-left: 1px;
+}
+
+
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+
+header {
+	width: 600px;
+	height: 120px;
+	
+}
+
+#marca {
+	width: 320px;
+	height: 120px;
+ }
+
+.marca {
+	width: 600px;
+	height: 120px;
+}
+
+#botonera {
+	width: 125px;
+	height: 120px;
+	  }
+
+#botonera2 {
+	width: 125px;
+	height: 120px;
+  }
+
+.botones{
+	width: 124px;
+	height: 55px;
+	font-size: 12px;
+}
+
+section {
+	width: 600px;
+	height: 1050px;
+}
+
+
+#contenido_contacto {
+	width: 90%;
+	height: 80px;
+}
+
+.estilo_contacto {
+	font-size: 24px;
+}
+
+button {
+	margin: 5px;
+}
+
+input, textarea, select {
+	border: 1px solid #000000;
+	padding: 0px;
+}
+
+#formulario {
+	width: 600px;
+	height: 350px;
+}
+
+#reserva {
+	width: 90%;
+	height:30px;
+}
+
+.reserva{
+	font-size: 22px;
+}
+
+.boton_label {
+	font-size:14px;
+}
+
+.boton_select {
+	height:24px;
+	font-size:12px;	
+}
+
+.boton_input {
+	height: 22px;
+	margin-bottom: 15px;
+}
+
+.boton_text {
+	margin-bottom: 15px;
+}
+
+.boton_eliminar {
+	height: 24px;
+}
+
+.boton_formulario {
+	height: 40px;
+	font-size: 16px;
+}
+
+.boton_formulario2 {
+	height: 40px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+#formulario2 {
+	width: 600px;
+	height: 470px;
+}
+
+#animado {
+	height:70px;
+}
+#animado2 {
+	height:70px;
+}
+
+footer {
+	width: 600px;
+	height: 120px;
+}
+
+#fondo_texto_redes {
+	width: 200px;
+	height: 100px;
+}
+
+.texto_redes {
+	width: 200px;
+	height: 100px;
+	line-height: 90px;
+	font-size: 20px;
+}
+
+#contactos {
+	width: 360px;
+	height: 90px;
+	margin-top: 15px;
+}
+.contacto1 {
+	width: 80px;
+	height: 88px;
+	margin: 1px;
+}
+
+.contacto2 {
+	width: 185px;
+	height: 88px;
+	margin-left: 1px;
+}
+
+.contacto3 {
+	width: 90px;
+	height: 88px;
+	margin-left: 1px;
+}	
+} /*fin adaptacion de 600px a 1023px*/
+
+
+
+@media all and (max-width: 599px) {
+
+header {
+	width: 100%;
+	height: 105px;
+	margin-bottom: 0px;
+	background-color: #FF8000;
+}
+
+#marca {
+	width: 66%;
+	height: 100%;
+ }
+
+.marca {
+	width: 100%;
+	height: 105px;
+	border-radius: 0px;
+}
+
+#botonera {
+	width: 16%;
+	height: 105px;
+	background-color: #FF8000;
+	margin-left: 1px;
+	  }
+
+#botonera2 {
+	width: 16%;
+	height: 105px;
+	margin-left: 5px;
+	background-color: #FF8000;
+	}
+
+.botones{
+	display: block;
+	width: 99%;
+	height: 47%;
+	line-height: 50px;  /*alinear texto verticalmente*/
+	font-size: 12px;
+	font-weight: bold;
+	border: 1px solid black;
+	border-radius: 4px;
+	margin-bottom: 1px;
+
+}
+
+.botones:hover {
+	background-color: rgba(255, 144, 0, 0.6);
+	box-shadow: 0 0 20px #FFFFFF;
+	padding: 0px 8px 0px 0px;
+}
+
+section {
+	width: 100%;
+	height: 1050px;
+	background-color: rgba(127, 64, 18, 1);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+#contenido_contacto {
+	width: 90%;
+	height: 60px;
+}
+
+.estilo_contacto {
+	height: 60px;
+	line-height: 80px;
+	font-size: 20px;
+}
+
+button {
+	margin: 5px;
+}
+
+input, textarea, select {
+	border: 1px solid #000000;
+	padding: 0px;
+}
+
+
+#formulario {
+	width: 100%;
+	height: 350px;
+	background-color: #BF601B;
+}
+
+#reserva {
+	width: 90%;
+	height:35px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.reserva{
+	font-size: 18px;
+	line-height: 35px;
+}
+
+.boton_label {
+	font-size:14px;
+	margin-bottom: 2px;
+}
+
+.boton_select {
+	height:24px;
+	font-size:12px;
+	font-family: Verdana;
+	background-color: white;
+	margin-bottom: 10px;
+	box-shadow: 2px 2px 5px #000000;
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+.boton_input {
+	height: 20px;
+	margin-bottom: 15px;
+}
+
+.boton_text {
+	margin-bottom: 15px;
+}
+
+.boton_eliminar {
+	width:90%;
+	height: 30px;
+	margin-top: 20px;
+}
+
+
+
+.boton_formulario {
+	width: 80%;
+	height: 40px;
+	margin-top: 25px;
+	font-size: 14px;
+}
+
+.boton_formulario2 {
+	width: 80%;
+	height: 40px;
+	background-color: #A4A4A4;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+	box-shadow: 3px 3px 10px #000000;
+	font-family: fontspring;
+	font-size: 14px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.boton_formulario:hover {
+	background-color: #D8D8D8;
+	border-color: white;
+	box-shadow: 0px 0px 10px #FFFFFF;
+}
+
+.boton_formulario2:hover {
+	background-color: #D8D8D8;
+	border-color: white;
+	box-shadow: 0px 0px 10px #FFFFFF;
+}
+
+
+#formulario2 {
+	width: 100%;
+	height: 500px;
+	background-color: #BF601B;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: auto;
+	border-radius: 0px;
+}
+
+#animado {
+	height:50px;
+}
+#animado2 {
+	height:50px;
+}
+
+
+
+footer {
+	width: 100%;
+	height: 80px;
+	background-color: #FF8000;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	border-radius: 10px;
+}
+
+#fondo_texto_redes {
+	width: 100px;
+	height: 80px;
+	float: left;
+}
+
+.texto_redes {
+	width: 100px;
+	height: 80px;
+	text-align: center;
+	line-height: 65px;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: fontspring;
+	color: #2E64FE;
+}
+
+#contactos {
+	width: 202px;
+	height: 50px;
+	background-color: #F2F2F2;
+	float: left;
+	margin-top: 16px;
+	margin-left: 5px;
+}
+.contacto1 {
+	width: 50px;
+	height: 49px;
+	background-color: white;
+	float:left;
+	margin: 1px;
+}
+
+.contacto2 {
+	width: 95px;
+	height: 49px;
+	background-color: white;
+	float:left;
+	margin-left: 1px;
+}
+
+.contacto3 {
+	width: 50px;
+	height: 49px;
+	background-color: white;
+	float:left;
+	margin-left: 1px;
+}
+}
+
+}

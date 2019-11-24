@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Amoblamientos Fenix</title>
+		<meta charset="utf-8"/>
+		<link href="fenix.ico" rel="shortcut icon">
+		<link rel="stylesheet" type="text/css" href="estilo_contacto.css">
+		<script type="text/javascript" src="funciones_contacto.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="marca">
+				<img src="imagenes/marca.jpg" class="marca">
+			</div>
+			<nav id="botonera">
+				<li><a href="index.html" class="botones">Inicio</a></li>
+				<li><a href="catalogo.html" class="botones">Catalogo</a></li>
+			</nav>
+			<nav id="botonera2">
+				<li><a href="contacto.html" class="botones">Contacto</a></li>
+				<li><a href="nuestra_fabrica.html" class="botones">Nosotros</a></li>
+			</nav>
+		</header>
+		<section id="contenido">
+			<div id="contenido_contacto">
+				<h2 class="estilo_contacto">Contactese con nosotros</h2>
+			</div>
+
+
+
+			<form id="formulario" method="POST">
+				<label for="nombre" class="boton_label" >Nombre</label>
+				<input type="text" name="nombre" class="boton_input" id="nombre" placeholder="Introduce tu nombre" maxlength="40">
+
+				<label for="apellido" class="boton_label">Apellido</label>
+				<input type="text" name="apellido" class="boton_input" id="apellido" placeholder="Introduce tu apellido" maxlength="40">
+
+				<label for="correo" class="boton_label">Correo electronico</label>
+				<input type="email" name="correo" class="boton_input" id="correo"
+				placeholder="Introduce tu correo" maxlength="50">
+
+				<label for="edad" class="boton_label">Edad</label>
+				<input type="number" name="edad" id="edad" min="0" max="100" placeholder="Introduce tu edad" class="boton_input">
+
+				<select id="opciones" name="opciones" class="boton_select">   
+					<option value="0">- Selecciona un motivo -</option>   
+					<option value="1">Consulta</option>   
+					<option value="2">Presupuesto</option>   
+				</select> 
+
+				<input type="submit" class="boton_formulario" value="Validar formulario">
+
+
+			</form>
+
+			<script type="text/javascript">
+				var nombre = document.getElementById('nombre')
+				var apellido = document.getElementById('apellido')
+				var correo = document.getElementById('correo')
+
+				function validarDatos() {
+					nombre.addEventListener("input", corroborarNombre)
+					apellido.addEventListener("input", corroborarApellido)
+					correo.addEventListener("input", corroborarCorreo)
+					edad.addEventListener("input", corroborarEdad)
+
+					corroborarNombre()
+					corroborarApellido()
+					corroborarCorreo()
+					corroborarEdad()
+				}
+
+				function corroborarNombre() {
+					if(nombre.value=='') {
+						nombre.setCustomValidity('Ingresa tu nombre!')
+						nombre.style.backgroundColor='#ffffff'
+					}
+					else {
+						nombre.setCustomValidity('')
+					}
+				}
+				function corroborarApellido() {
+					if(apellido.value=='') {
+						apellido.setCustomValidity('Ingresa tu apellido!')
+						apellido.style.backgroundColor='#ffffff'
+					}
+					else {
+						apellido.setCustomValidity('')
+					}
+				}
+				function corroborarCorreo() {
+					if(correo.value=='') {
+						correo.setCustomValidity('Ingresa tu correo electronico')
+						correo.style.backgroundColor='#ffffff'
+					}
+					else {
+						correo.setCustomValidity('')
+					}
+				}
+				function corroborarEdad() {
+					if(edad.value=='') {
+						edad.setCustomValidity('Ingresa tu edad!')
+						edad.style.backgroundColor='#ffffff'
+					}
+					else {
+						edad.setCustomValidity('')
+					}
+				}
+				window.addEventListener("load", validarDatos)
+			</script>
+
+			<canvas id="animado" width="475" height="95"></canvas>
+			<canvas id="animado2" width="475" height="95"></canvas>
+
+
+			<form id="formulario2">
+				<div id="reserva">
+					<h2 class="reserva">Reserva tu pedido</h2>
+				</div>
+				<input type="text" id="clave" class="boton_input" placeholder="Numero de pedido" required>
+				<textarea id="referencia" class="boton_text" placeholder="detalles" rows="5"></textarea>
+				<select id="categoria" class="boton_select">
+					<option value="0" selected>Tipo de entrega</option>
+					<option value="HTML">Envio a domicilio</option>
+					<option value="CSS">Retiro en nuestro local</option>
+				</select>
+				<input type="date" id="fecha" class="boton_input">
+				<input type="button" id="grabar" value="guardar pedido" class="boton_formulario2">
+				<div id="cajadatos">
+				
+				</div>
+			</form>
+			
+
+
+		</section>
+		<script src="canvas.js"></script>
+
+		<footer>
+			<aside id="fondo_texto_redes">
+				<p id="anim" class="texto_redes">CONTACTANOS</p>
+			</aside>
+			<div id="contactos">
+				<img src="imagenes/contacto1.jpg" class="contacto1">
+				<img src="imagenes/contacto2.jpg" class="contacto2">
+				<img src="imagenes/contacto3.jpg" class="contacto3">
+			</div>
+		</footer>
+	</body>
+</html>	

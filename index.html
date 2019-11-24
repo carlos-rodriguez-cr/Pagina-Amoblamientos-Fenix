@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<html>
+	<head>
+		<title>Amoblamientos Fenix</title>
+		<meta charset="utf-8"/>
+		<link href="fenix.ico" rel="shortcut icon">
+		<link rel="stylesheet" type="text/css" href="estilo_entrega.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script language="JavaScript"> 
+			var navegador = navigator.appName;
+			if (navegador == "Microsoft Internet Explorer"){
+			direccion=("explorer.html");
+			}
+		</script>
+		<script type="text/javascript"> 
+			function EjecutarReloj() {
+    			var Dia = new Date();
+    			var hr = Dia.getHours();
+    			var min = Dia.getMinutes();
+    			var sec = Dia.getSeconds();
+    			
+    			min = checkTime(min);
+    			sec = checkTime(sec);
+    			document.getElementById("pReloj").innerHTML = hr + " : " + min + " : " + sec;
+    			var time = setTimeout(function(){ EjecutarReloj() }, 500);
+    			
+			}
+			function checkTime(i) {
+    			if (i < 10) {
+       				i = "0" + i;
+    			}
+    			return i;
+			}
+		</script>
+
+			<script>
+				var nuevaVentana;
+				function doble( x ) {
+				return 2*x;
+				}
+				var ancho = screen.width;
+				var alto = screen.height;
+				if(ancho < 800){
+					setTimeout(
+					function nueva() {
+					nuevaVentana=nuevaVentana=window.open("", "segundaPag", "toolbar=yes,location=no,menubar=yes,resizable=yes,"+ "width=500,height=500" );
+					nuevaVentana.document.write("<HTML><HEAD><TITLE>"+ "Sin Título</TITLE></HEAD>\n"); nuevaVentana.document.write("<BODY><form>\n");
+					nuevaVentana.document.write("<img src='imagenes/marca.jpg' id='img1' class='estilo_img'>");
+					nuevaVentana.document.write("<input type='button' "+ "value='Cerrar' onClick='window.close();'>\n"); nuevaVentana.document.write("</form>\n"); nuevaVentana.document.write("</body></html>\n"); nuevaVentana.document.close();},3000)
+				}
+				if(ancho > 800 && ancho < 1200){
+					setTimeout(
+					function nueva() {
+					nuevaVentana=nuevaVentana=window.open("", "segundaPag", "toolbar=yes,location=no,menubar=yes,resizable=yes,"+ "width=500,height=500" );
+					nuevaVentana.document.write("<HTML><HEAD><TITLE>"+ "Sin Título</TITLE></HEAD>\n"); nuevaVentana.document.write("<BODY><form>\n");
+					nuevaVentana.document.write("<img src='imagenes/banner1.jpg' id='img1' class='estilo_img'>");
+					nuevaVentana.document.write("<input type='button' "+ "value='Cerrar' onClick='window.close();'>\n"); nuevaVentana.document.write("</form>\n"); nuevaVentana.document.write("</body></html>\n"); nuevaVentana.document.close();},3000)
+				}
+				if(ancho > 1200){
+					setTimeout(
+					function nueva() {
+					nuevaVentana=nuevaVentana=window.open("", "segundaPag", "toolbar=yes,location=no,menubar=yes,resizable=yes,"+ "width=500,height=500" );
+					nuevaVentana.document.write("<HTML><HEAD><TITLE>"+ "Sin Título</TITLE></HEAD>\n"); nuevaVentana.document.write("<BODY><form>\n");
+					nuevaVentana.document.write("<img src='imagenes/banner2.jpg' id='img1' class='estilo_img'>");
+					nuevaVentana.document.write("<input type='button' "+ "value='Cerrar' onClick='window.close();'>\n"); nuevaVentana.document.write("</form>\n"); nuevaVentana.document.write("</body></html>\n"); nuevaVentana.document.close();},3000)
+				}
+				 // -->
+			</script>
+
+	</head>
+
+
+
+
+	<body id="cont"  onload="EjecutarReloj()">
+		<section id="contenedor">
+
+		<header>
+
+			
+
+			<div id="marca">
+				<img src="imagenes/marca.jpg" class="marca">
+			</div>
+			<nav id="botonera" id="anim">
+				<li><a href="index.html" class="botones">Inicio</a></li>
+				<li><a href="catalogo.html" class="botones">Catalogo</a></li>
+			</nav>
+			<nav id="botonera2">
+				<li><a href="contacto.html" class="botones">Contacto</a></li>
+				<li><a href="nuestra_fabrica.html" class="botones">Nosotros</a></li>
+			</nav>
+
+		</header>
+		<section id="contenedor2" ">
+			<div id="contenedor_horario">
+
+				<div class="widget">
+					<div class="fecha">
+						<script>
+    					var fechaActual=new Date();
+    					var year=fechaActual.getFullYear();
+    					var mes =fechaActual.getMonth();
+    					var dia=fechaActual.getDate();
+    					var dayWeek=fechaActual.getDay();
+
+    					var mesesAnio=["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    					var diasSemana=["Domingo","Lunes","Martes","Miercoles", 
+   							"Jueves","Viernes","Sabado"];
+
+    					document.write("<p>" + diasSemana[dayWeek] +" " +dia+ " de "+mesesAnio[mes] + " del "+year +"</p>");
+    					</script>
+					</div>
+					
+					<div id="Reloj">
+						<p id="pReloj" class="reloj"></p>
+					</div>
+				</div>
+			</div>
+		
+			<div id="fondo_texto1">
+				<p id="anim" class="estilo_texto1">SOMOS FABRICANTES</p>
+				<p id="anim" class="estilo_texto2">Armados exclusivos, usamos melaminas y formicas de alta calidad y maderas nacionales e importadas. Presupuesto via Email, asesoramiento a domicilio sin cargo.</p>
+			</div>
+			<div id="fondo_imagenes">
+				<div>
+					<a href="catalogo.html">
+						<img src="galeria2/10.jpg" id="img1" class="estilo_img">
+					</a>
+					<a href="catalogo.html">
+						<img src="galeria2/11.jpg" id="img1" class="estilo_img">
+					</a>
+				</div>
+				
+				
+			</div>
+			
+			
+		</section>
+		<footer>
+			<aside id="fondo_texto_redes">
+				<p id="anim" class="texto_redes">CONTACTANOS</p>
+			</aside>
+			<div id="contactos">
+				<img src="imagenes/contacto1.jpg" class="contacto1">
+				<img src="imagenes/contacto2.jpg" class="contacto2">
+				<img src="imagenes/contacto3.jpg" class="contacto3">
+			</div>
+
+		</footer>
+	</section>
+	</body>
+</html>	

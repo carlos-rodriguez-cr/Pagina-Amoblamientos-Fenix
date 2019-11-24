@@ -1,0 +1,173 @@
+body {
+	background-image:url(imagenes/fondo_madera1.jpg);
+	font-family: serif;
+}
+
+header {
+	width: 960px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#marca {
+	width: 640px;
+	height: 125px;
+	float: left;
+ }
+
+.marca {
+	width: 960px;
+	height: 125px;
+	border-radius: 10px;
+}
+
+nav {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	-webkit-transition: all 0.6s ease-out;
+   -moz-transition: all 0.6s ease-out;
+   -o-transition: all 0.6s ease-out;
+   
+}
+
+#botonera {
+	width: 150px;
+	height: 125px;
+	float: left; /*muevo la botonera hacia la derecha*/
+	  }
+
+#botonera2 {
+	width: 150px;
+	height: 125px;
+	float: left; /*muevo la botonera hacia la derecha*/
+	margin-left: 10px;
+	  }
+
+.botones{
+	display: block;
+	width: 149px;
+	height: 59px;
+	color: white;
+	text-decoration: none;
+	text-align: center; /*alinear texto horizontalmente*/
+	line-height: 59px;  /*alinear texto verticalmente*/
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-bottom: 3px;
+
+}
+
+.botones:hover {
+	background-color: rgba(255, 144, 0, 0.6);
+	box-shadow: 0 0 20px #FFFFFF;
+	padding: 0px 8px 0px 0px;
+}
+
+
+
+
+section {
+	width: 960px;
+	height: 2200px;
+	background-color: rgba(127, 64, 18, 0.8);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#contenedor-imagenes {
+	width: 960px;
+	height: 2200px;
+	text-align: center;
+}
+
+#imagenes {
+	width:200px;
+	height:200px;
+	margin: 20px;
+	border-radius: 5px;
+}
+.imagenes {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin:;
+}
+
+
+@font-face{
+	font-family: 'fontspring';
+	src:url('fuente/fontspring.otf') format('truetype');
+}
+
+footer {
+	width: 960px;
+	height: 150px;
+	background-color: #FF7F24;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	border-radius: 10px;
+}
+
+#fondo_texto_redes {
+	width: 300px;
+	height: 150px;
+	float: left;
+}
+
+.texto_redes {
+	width: 300px;
+	height: 150px;
+	text-align: center;
+	line-height: 95px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: fontspring;
+	color: #2E64FE;
+}
+
+#contactos {
+	width: 480px;
+	height: 100px;
+	background-color: #F2F2F2;
+	float: left;
+	margin-top: 25px;
+}
+.contacto1 {
+	width: 100px;
+	height: 95px;
+	background-color: white;
+	float:left;
+	margin: 1px;
+}
+
+.contacto2 {
+	width: 260px;
+	height: 95px;
+	background-color: white;
+	float:left;
+	margin-left: 1px;
+}
+
+.contacto3 {
+	width: 110px;
+	height: 95px;
+	background-color: white;
+	float:left;
+	margin-left: 1px;
+}
